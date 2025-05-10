@@ -6,15 +6,19 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Toaster } from "@/components/ui/toaster"
+import Image from "next/image"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "AASGON - Advancing Sustainable Development Globally",
+  title: "AASGON - Africa Asia Scholars Global Network",
   description:
     "AASGON is a signatory to the UN Global Compact (UNGC) and Member of the UK Stakeholders for Sustainable Development (UKSSD)",
-    generator: 'v0.dev'
-}
+  icons: {
+      icon: "/aasgon.png", // For browsers
+      apple: "/aasgon.png", // For Apple devices
+    },
+  }
 
 export default function RootLayout({
   children,

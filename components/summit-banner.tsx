@@ -24,7 +24,7 @@ const SummitBanner = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col md:flex-row items-center justify-between gap-8"
+          className="flex flex-col md:flex-row items-center justify-between gap-5"
         >
           <div className="flex-1 space-y-4">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/20 text-sm text-white backdrop-blur-sm">
@@ -36,13 +36,13 @@ const SummitBanner = () => {
               <span className="text-gradient-gold">GSUA SUMMIT 2025</span>
             </h2>
 
-            <p className="text-blue-100 max-w-lg">
+            <p className="text-blue-100 max-w-lg text-justify">
               Join us for the prestigious Global Sustainable Urban Awards Summit & Expo, bringing together leaders,
               innovators, and change-makers from around the world to celebrate and advance sustainable urban
               development.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 py-2">
               <div className="flex items-center space-x-2 text-white">
                 <Calendar className="h-5 w-5 text-blue-200" />
                 <span className="text-sm">18-20 July 2025</span>
@@ -71,33 +71,31 @@ const SummitBanner = () => {
               >
                 Register to Exhibit
               </Button>
-            </div>
-          </div>
-
-          <div className="flex-1 flex flex-col items-center">
-            <div className="relative h-32 md:h-40 w-full md:w-auto mb-4">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-gold-light to-gold-dark opacity-20 blur-md rounded-lg"></div>
-              <div className="relative glass-card rounded-lg overflow-hidden shadow-lg border border-white/20">
-                <Image
-                  src="/placeholder.svg?height=160&width=400"
-                  alt="GSUA Summit 2025"
-                  width={400}
-                  height={160}
-                  className="object-contain"
-                />
-                <div className="absolute right-0 bottom-0 bg-white/90 text-un-blue px-3 py-1 text-sm font-bold rounded-tl-lg">
-                  18-20 JULY 2025 • LONDON
-                </div>
+              <div className="w-full pt-6">
+                <p className="text-center text-gradient-gold text-sm text-bold mb-2 p-0">Event Starts In</p>
+                <CountdownTimer targetDate={targetDate} />
               </div>
             </div>
 
-            <div className="w-full">
-              <p className="text-center text-white text-sm mb-2">Event Starts In</p>
-              <CountdownTimer targetDate={targetDate} />
-            </div>
           </div>
+
+
+          <div className="relative md: w-full md:w-auto mb-4">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-gold-light to-gold-dark opacity-20 blur-md rounded-lg"></div>
+              <div className="relative glass-card rounded-lg overflow-hidden shadow-lg border border-white/20">
+                <Image
+                  src="/summit banner.jpg"
+                  alt="GSUA Summit 2025"
+                  width={800}
+                  height={470}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          
         </motion.div>
       </div>
+        
     </section>
   )
 }

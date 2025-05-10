@@ -29,7 +29,6 @@ const Header = () => {
   ]
 
   const mainNavLinks = [
-    { name: "Home", href: "/" },
     {
       name: "About AASGON",
       href: "#",
@@ -87,7 +86,7 @@ const Header = () => {
       ],
     },
     {
-      name: "Partner Organizations",
+      name: "Partners",
       href: "#",
       dropdown: [
         { name: "UN Global Compact", href: "/partners/ungc" },
@@ -95,7 +94,7 @@ const Header = () => {
         { name: "Other Partners", href: "/partners/others" },
       ],
     },
-    { name: "Contact Us", href: "/contact" },
+    
   ]
 
   const languages = [
@@ -121,7 +120,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-4">
               <div className="flex space-x-3">
-                <a href="https://facebook.com" aria-label="Facebook" className="hover:text-blue-300 transition-colors">
+                <a href="https://web.facebook.com/pages/category/Social-Service/Africa-Asia-Scholars-Global-Network-AASGON-101759198222219" aria-label="Facebook" className="hover:text-blue-300 transition-colors">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -135,7 +134,7 @@ const Header = () => {
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                   </svg>
                 </a>
-                <a href="https://twitter.com" aria-label="Twitter" className="hover:text-blue-300 transition-colors">
+                <a href="https://twitter.com/aasgon" aria-label="Twitter" className="hover:text-blue-300 transition-colors">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -149,7 +148,7 @@ const Header = () => {
                     <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
                   </svg>
                 </a>
-                <a href="https://linkedin.com" aria-label="LinkedIn" className="hover:text-blue-300 transition-colors">
+                <a href="https://www.linkedin.com/in/africa-asia-scholars-global-network-4ba16a29" aria-label="LinkedIn" className="hover:text-blue-300 transition-colors">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -202,7 +201,7 @@ const Header = () => {
               >
                 <div className="relative h-12 w-12 md:h-16 md:w-16">
                   <Image
-                    src="/placeholder.svg?height=64&width=64"
+                    src="/aasgon.png?height=64&width=64"
                     alt="AASGON Logo"
                     width={64}
                     height={64}
@@ -217,10 +216,7 @@ const Header = () => {
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
                   <h1 className="text-xl md:text-2xl font-bold">AASGON</h1>
-                  <p className="text-xs text-muted-foreground hidden md:block max-w-md">
-                    Signatory to the UN Global Compact (UNGC) and Member of the UK Stakeholders for Sustainable
-                    Development (UKSSD)
-                  </p>
+                  
                 </motion.div>
               </div>
             </Link>
